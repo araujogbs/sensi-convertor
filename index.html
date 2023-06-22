@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensi converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu">
+
+            <h1 class="sobre" >About this Sensitivity Converter</h1>
+            <h2 id="textinho" >I created this sensitivity converter to help you keep the aim up to date in all games,
+                on the right side are all the results corresponding to the sensitivity you enter in the fields.  &nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Enjoy :D</h2>
+            <h1 id="title">Sensi converter</h1>
+
+
+            <div class="menuleft">
+
+               
+
+                <select onchange="update(), converteSensi()" list="games" id="chooseagame1" type="text">
+                    <option value= 1 >Valorant</option>
+                    <option value= 2 >CS:GO</option>
+                </select>
+
+
+                <label id="yourdpilabel" for="yourdpi">Your DPI
+                    <input onchange="update(), converteSensi()" id="yourdpi" type="number">
+                </label>
+
+                <label id="yoursensilabel" for="yoursensi">Your sensi
+                    <input onchange="update(), converteSensi()" id="yoursensi" type="number">
+                </label>
+
+
+            </div>
+
+
+            <div class="menucenter">
+
+                <select onchange="update(), converteSensi()" id="chooseagame2" type="text">
+                    <option value= 1 >Valorant</option>
+                    <option selected value= 2 >CS:GO</option>
+                </select>
+
+                <label id="dpitoconvertlabel" for="dpitoconvert">Converte to DPI
+                    <input onchange="update(), converteSensi()" id="dpitoconvert" type="number">
+                </label>
+
+            </div>
+
+            <div class="menuright">
+
+                <label disabled id="convertedsensilabel" for="convertedsensi">Converted Sensi
+                    <span  id="convertedsensi"></span>
+                </label>
+
+                <label id="in360label" for="in360">in/360
+                    <span id="in360" ></span>
+                </label>
+
+                <label id="cm360label" for="cm360">cm/360
+                    <span id="in360" ></span>
+                </label>
+
+                <label id="eDPIlabel" for="eDPI">eDPI
+                    <span id="eDPI" ></span>
+                </label>
+
+            </div>
+
+
+<h1 id="createdby" >created by @vulgoflow</h1>
+
+        </div>
+
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

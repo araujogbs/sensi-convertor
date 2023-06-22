@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Valorant ;
+    src: url(./assets/Valorant\ Font.ttf);
+}
+
+@font-face {
+    font-family: CS ;
+    src: url(./assets/Nexa-Heavy.ttf);
+}
+
+body{
+    background-image: url(./assets/cropped-1920-1080-1086711.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17%;
+    
+}
+
+main .menu{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(45, 45, 45, 0.751);
+    width: 50%;
+    height: 50vh;
+    border: 5px solid;
+    border-radius: 2%;
+    align-items: center;
+
+}
+
+main #title {
+    font-family: Valorant;
+    position: absolute;
+    left: 44%;
+    top: 33%;
+    font-size: 150%;
+    color: white;
+}
+
+
+main .menuleft{
+    display: flex;
+    position: fixed;
+    left: 30%;
+    flex-direction: column;
+    gap: 70px;
+}
+
+main .menucenter{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    position: fixed;
+    top: 44%;
+}
+
+main .menuright{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    position: fixed;
+    right: 30%;
+}
+
+main #chooseagamelabel1, #chooseagamelabel2, #yoursensilabel, #yourdpilabel, 
+#dpitoconvertlabel, #convertedsensilabel, #eDPIlabel, #cm360label, #in360label
+{
+    display: flex;
+    flex-direction: column;
+    font-family: CS;
+    font-size: 15px;
+    white-space: nowrap;
+    gap: 6px;
+    color: rgb(255, 255, 255);
+}
+
+main #yoursensilabel, #yourdpilabel, #dpitoconvertlabel{
+    width: 70%;
+}
+
+main #convertedsensi, #in360, #cm360, #eDPI{
+    font-size: 17px;
+    position: fixed;
+    top: 45%;
+    color: white;
+}
+
+main .sobre{
+    position: fixed;
+    top: 6%;
+    font-family: CS;
+    text-transform: uppercase;
+    color: white;
+}
+main #textinho{
+    position: fixed;
+    top: 14%;
+    font-family: CS;
+    width: 50%;
+    color: white;
+
+
+}
+
+main #createdby{
+    position: fixed;
+    bottom: 0%;
+    color: rgb(255, 255, 255);
+}
+
+
+
